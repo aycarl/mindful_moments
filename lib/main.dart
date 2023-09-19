@@ -122,6 +122,21 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
+            Padding(
+              padding:
+                  const EdgeInsets.symmetric(vertical: 16.0, horizontal: 16.0),
+              child: Column(
+                children: [
+                  const TextField(
+                    decoration: InputDecoration(
+                      hintText: 'Name of Mindful Moment',
+                    ),
+                  ),
+                  ElevatedButton(
+                      onPressed: () {}, child: const Text('Add New MM')),
+                ],
+              ),
+            )
           ],
         ),
       ),
